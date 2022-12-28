@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="CSS/reset.css" />
+		<link rel="stylesheet" href="CSS/contato.css" />
+		<title>Contato - Barbearia Alura</title>
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1>
+					<img
+						id="logo"
+						src="imagens/logo.png"
+						alt="Logo da Barbearia Alura"
+					/>
+				</h1>
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="produtos.html">Produtos</a>
+						</li>
+						<li>
+							<a href="contato.html">Agendamentos</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<table>
+				<thead>
+					<tr>
+						<th>Dia</th>
+						<th>Horário</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Segunda à Sexta</td>
+						<td>8 às 20 hrs</td>
+					</tr>
+					<tr>
+						<td>Sábado e Domingo</td>
+						<td>8 às 14 hrs</td>
+					</tr>
+				</tbody>
+			</table>
+			<form>
+				<div class="caixa">
+					<fieldset>
+						<legend>Dados Pessoais</legend>
+						<div>
+							<label for="nome" class="dadosPessoaisLabel"
+								>Nome</label
+							>
+							<input
+								type="text"
+								id="nome"
+								required
+								class="dadosPessoaisInput"
+							/>
+
+							<label for="sobrenome" class="dadosPessoaisLabel"
+								>Sobrenome Completo</label
+							>
+							<input
+								type="text"
+								id="sobrenome"
+								required
+								class="dadosPessoaisInput"
+							/>
+
+							<label for="cpf" class="dadosPessoaisLabel"
+								>CPF</label
+							>
+							<input
+								type="text"
+								id="cpf"
+								placeholder="XXX.XXX.XXX-XX"
+								required
+								class="dadosPessoaisInput"
+							/>
+						</div>
+						<div>
+							<label for="email" class="dadosPessoaisLabel"
+								>E-mail</label
+							>
+							<input
+								type="email"
+								id="email"
+								placeholder="seuEmail@domínio.com"
+								required
+								class="dadosPessoaisInput"
+							/>
+
+							<label for="celular" class="dadosPessoaisLabel"
+								>Celular</label
+							>
+							<input
+								type="tel"
+								id="celular"
+								placeholder="(XX) XXXXX-XXXX"
+								required
+								class="dadosPessoaisInput"
+							/>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Como prefere ser contatado?</legend>
+						<label
+							><input
+								type="radio"
+								name="formaDeContato"
+								id="radioEmail"
+								checked
+							/>Email</label
+						>
+						<label
+							><input
+								type="radio"
+								name="formaDeContato"
+								id="radioCelular"
+							/>Ligação</label
+						>
+						<label
+							><input
+								type="radio"
+								name="formaDeContato"
+								id="radioWhatsapp"
+							/>Whatsapp</label
+						>
+					</fieldset>
+					<fieldset>
+						<legend>Horário de Atendimento</legend>
+						<select>
+							<option value="manha">Matutino</option>
+							<option value="tarde">Vespertino</option>
+							<option value="noite">Noturno</option>
+						</select>
+
+						<label class="checkbox"
+							><input type="checkbox" />Gostaria de receber nossas
+							novidades por email?</label
+						>
+
+						<label for="obs" class="dadosPessoaisLabel"
+							>Observação</label
+						>
+						<textarea id="obs" cols="100" rows="5"></textarea>
+
+						<input type="submit" class="enviar" />
+					</fieldset>
+				</div>
+			</form>
+		</main>
+		<footer>
+			<img src="imagens/logo-branco.png" alt="Logo da Barbearia Alura" />
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+		</footer>
+	</body>
+</html>
