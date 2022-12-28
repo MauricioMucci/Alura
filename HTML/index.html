@@ -2,21 +2,34 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="stylesheet" href="CSS/reset.css" />
-		<link rel="stylesheet" href="CSS/index.css" />
+		<link rel="stylesheet" href="../CSS/reset.css" />
+		<link rel="stylesheet" href="../CSS/index.css" />
 		<title>Barbearia Alura</title>
 	</head>
 	<body>
 		<header>
 			<img
 				id="logo"
-				src="imagens/logo-branco.png"
+				src="../imagens/logo.png"
 				alt="Logo da Barbearia Alura"
 			/>
-			<a href="produtos.html" class="banner">Barbearia Alura</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">home</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li><a href="contato.html">Agendamentos</a></li>
+				</ul>
+			</nav>
 		</header>
+
+		<img
+			class="banner"
+			src="../imagens/banner.jpg"
+			alt="Banner da Barbearia Alura"
+		/>
+
 		<main>
-			<div class="descricoes">
+			<section class="principal">
 				<h2 class="titulo">Sobre a Barbearia Alura</h2>
 				<p>
 					Localizada no coração da cidade a
@@ -40,10 +53,9 @@
 					<u>excelência e agilidade</u>, garantindo qualidade e
 					satisfação dos nossos clientes.
 				</p>
-			</div>
-			<div class="descricoes">
+			</section>
+			<section class="secundaria">
 				<h2 class="titulo">Benefícios</h2>
-				<img id="beneficios" src="imagens/beneficios.jpg" />
 				<ol>
 					<li class="itens">Atendimento ao Cliente;</li>
 					<li class="itens">Espaço <strong>Diferenciado</strong>;</li>
@@ -52,10 +64,14 @@
 						Profissionais <strong>Qualificados</strong>.
 					</li>
 				</ol>
-			</div>
+				<img class="beneficios" src="../imagens/beneficios.jpg" />
+			</section>
 		</main>
 		<footer>
-			<img src="imagens/logo.png" alt="Logo da Barbearia Alura" />
+			<img
+				src="../imagens/logo-branco.png"
+				alt="Logo da Barbearia Alura"
+			/>
 			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
 		</footer>
 	</body>

@@ -1,32 +1,30 @@
-header {
-	background-color: gainsboro;
-	padding: 20px 10px;
-}
-
 * {
 	box-sizing: border-box;
+}
+
+header {
+	background-color: gainsboro;
+	text-align: center;
+	padding: 20px 10px;
 }
 
 #logo {
 	vertical-align: middle;
 }
 
-.caixa {
-	width: 940px;
-	margin: 0 auto;
+nav {
+	display: inline;
 	position: relative;
-	width: 80%;
 }
 
-nav {
-	position: absolute;
-	top: 110px;
-	right: 0;
+nav ul {
+	display: inline;
+	vertical-align: middle;
 }
 
 nav li {
 	display: inline;
-	margin: 0 0 0 15px;
+	margin: 0 1em 0 0;
 }
 
 nav a {
@@ -42,6 +40,13 @@ nav a {
 nav a:hover {
 	color: darkred;
 	text-decoration: underline;
+}
+
+.caixa {
+	width: 940px;
+	margin: 0 auto;
+	position: relative;
+	width: 80%;
 }
 
 fieldset {

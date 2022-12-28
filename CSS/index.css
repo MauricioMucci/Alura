@@ -1,57 +1,8 @@
-body {
-	background-color: gainsboro;
-}
-
-header {
-	padding: 30px 0;
-	text-align: center;
-	background: url(../imagens/bg.jpg);
-}
-
-#logo {
-	vertical-align: middle;
-}
-
-.banner {
-	color: white;
-	font-weight: bold;
-	font-size: x-large;
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-		sans-serif;
-	text-transform: uppercase;
-	text-decoration: none;
-	transition: 1s all;
-}
-
-.banner:hover {
-	color: darkred;
-	font-size: xx-large;
-}
-
-.descricoes {
-	margin: 10px 3px;
-	padding: 5px 10px;
-	border: 5px solid black;
-	border-radius: 5px;
-}
-
-div:hover {
-	border-color: darkred;
-}
-
-.titulo {
-	font-weight: bold;
-	font-size: xx-large;
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-		sans-serif;
-}
-
 p {
 	font-size: larger;
-	text-align: center;
-	margin: 20px 0;
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
 		sans-serif;
+	margin: 20px 0;
 }
 
 strong {
@@ -71,40 +22,86 @@ em strong {
 	font-size: x-large;
 }
 
-#beneficios {
-	width: 30%;
+* {
+	box-sizing: border-box;
+}
+
+header {
+	background-color: gainsboro;
+	text-align: center;
+	padding: 2em 1em;
+}
+
+#logo {
 	vertical-align: middle;
 }
 
-ol {
-	width: 30%;
-	margin: 0 0 0 30%;
-	display: inline-block;
+nav {
+	display: inline;
+	position: relative;
+}
+
+nav ul {
+	display: inline;
 	vertical-align: middle;
 }
 
-.itens {
-	margin: 20px 0;
-	font-size: x-large;
+nav li {
+	display: inline;
+	margin: 0 1em 0 0;
+}
+
+nav a {
+	color: black;
+	font-size: large;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
 		sans-serif;
 }
 
-.itens:hover {
+nav a:hover {
 	color: darkred;
-	font-size: xx-large;
+	text-decoration: underline;
+}
+
+.banner {
+	width: 100%;
+}
+
+section {
+	margin: 1em 1em;
+}
+
+.titulo {
+	font-size: 2em;
+	font-weight: bold;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+	margin: 0 0 1em 0;
+	text-align: center;
+}
+
+.beneficios {
+	vertical-align: middle;
+}
+
+ol {
+	display: inline;
+	vertical-align: middle;
 }
 
 footer {
-	padding: 10px 0;
+	padding: 30px 0;
 	text-align: center;
-	background: url(../imagens/banner.jpg);
+	background: url(../imagens/bg.jpg);
 }
 
 .copyright {
-	color: black;
+	color: white;
 	font-size: small;
-	font-weight: bolder;
+	font-style: italic;
 	margin: 10px 0 0 0;
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
 		sans-serif;
