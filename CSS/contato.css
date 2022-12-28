@@ -3,6 +3,10 @@ header {
 	padding: 20px 10px;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 #logo {
 	vertical-align: middle;
 }
@@ -54,16 +58,20 @@ legend,
 		sans-serif;
 }
 
+.componenteDadosPessoais {
+	display: inline-block;
+	width: 25vw;
+}
+
 .dadosPessoaisLabel {
 	font-size: large;
 	font-weight: bold;
 	display: block;
-	margin: 20px 0 0 0;
 }
 
 .dadosPessoaisInput {
 	padding: 2px 5px;
-	width: 50%;
+	width: 80%;
 }
 
 select {
