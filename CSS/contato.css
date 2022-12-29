@@ -2,6 +2,11 @@
 	box-sizing: border-box;
 }
 
+body {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+}
+
 header {
 	background-color: gainsboro;
 	text-align: center;
@@ -33,8 +38,6 @@ nav a {
 	font-weight: bold;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-		sans-serif;
 }
 
 nav a:hover {
@@ -59,8 +62,10 @@ legend,
 	color: darkred;
 	font-size: larger;
 	font-weight: bolder;
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-		sans-serif;
+}
+
+fieldset div {
+	margin: 10px 0;
 }
 
 .componenteDadosPessoais {
@@ -90,8 +95,6 @@ select {
 	padding: 10px 10px;
 	font-style: italic;
 	font-size: medium;
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-		sans-serif;
 }
 
 .enviar {
@@ -116,8 +119,6 @@ select {
 table {
 	width: 80%;
 	margin: 10px auto;
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-		sans-serif;
 }
 
 th,
@@ -145,6 +146,4 @@ footer {
 	font-size: small;
 	font-style: italic;
 	margin: 10px 0 0 0;
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-		sans-serif;
 }
