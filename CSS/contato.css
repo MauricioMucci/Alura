@@ -68,18 +68,18 @@ fieldset div {
 	margin: 10px 0;
 }
 
-.componenteDadosPessoais {
+.dados-pessoais-div {
 	display: inline-block;
 	width: 25vw;
 }
 
-.dadosPessoaisLabel {
+.dados-pessoais-label {
 	font-size: large;
 	font-weight: bold;
 	display: block;
 }
 
-.dadosPessoaisInput {
+.dados-pessoais-input {
 	padding: 2px 5px;
 	width: 80%;
 }

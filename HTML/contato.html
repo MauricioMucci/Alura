@@ -51,34 +51,32 @@
 					<fieldset>
 						<legend>Dados Pessoais</legend>
 						<div>
-							<div class="componenteDadosPessoais">
-								<label for="nome" class="dadosPessoaisLabel"
+							<div class="dados-pessoais-div">
+								<label for="nome" class="dados-pessoais-label"
 									>Nome</label
 								>
 								<input
 									type="text"
 									id="nome"
 									required
-									class="dadosPessoaisInput"
+									class="dados-pessoais-input"
 								/>
 							</div>
-
-							<div class="componenteDadosPessoais">
+							<div class="dados-pessoais-div">
 								<label
 									for="sobrenome"
-									class="dadosPessoaisLabel"
+									class="dados-pessoais-label"
 									>Sobrenome Completo</label
 								>
 								<input
 									type="text"
 									id="sobrenome"
 									required
-									class="dadosPessoaisInput"
+									class="dados-pessoais-input"
 								/>
 							</div>
-
-							<div class="componenteDadosPessoais">
-								<label for="cpf" class="dadosPessoaisLabel"
+							<div class="dados-pessoais-div">
+								<label for="cpf" class="dados-pessoais-label"
 									>CPF</label
 								>
 								<input
@@ -86,13 +84,13 @@
 									id="cpf"
 									placeholder="XXX.XXX.XXX-XX"
 									required
-									class="dadosPessoaisInput"
+									class="dados-pessoais-input"
 								/>
 							</div>
 						</div>
 						<div>
-							<div class="componenteDadosPessoais">
-								<label for="email" class="dadosPessoaisLabel"
+							<div class="dados-pessoais-div">
+								<label for="email" class="dados-pessoais-label"
 									>E-mail</label
 								>
 								<input
@@ -100,12 +98,13 @@
 									id="email"
 									placeholder="seuEmail@domínio.com"
 									required
-									class="dadosPessoaisInput"
+									class="dados-pessoais-input"
 								/>
 							</div>
-
-							<div class="componenteDadosPessoais">
-								<label for="celular" class="dadosPessoaisLabel"
+							<div class="dados-pessoais-div">
+								<label
+									for="celular"
+									class="dados-pessoais-label"
 									>Celular</label
 								>
 								<input
@@ -113,7 +112,7 @@
 									id="celular"
 									placeholder="(XX) XXXXX-XXXX"
 									required
-									class="dadosPessoaisInput"
+									class="dados-pessoais-input"
 								/>
 							</div>
 						</div>
@@ -150,17 +149,14 @@
 							<option value="tarde">Vespertino</option>
 							<option value="noite">Noturno</option>
 						</select>
-
 						<label class="checkbox"
 							><input type="checkbox" />Gostaria de receber nossas
 							novidades por email?</label
 						>
-
-						<label for="obs" class="dadosPessoaisLabel"
+						<label for="obs" class="dados-pessoais-label"
 							>Observação</label
 						>
 						<textarea id="obs" cols="100" rows="5"></textarea>
-
 						<input type="submit" class="enviar" />
 					</fieldset>
 				</div>
