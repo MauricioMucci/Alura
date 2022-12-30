@@ -73,10 +73,13 @@ section {
 	text-align: center;
 	font-size: larger;
 	margin: 0 1em;
+	transition: 1s all;
 }
 
 section:hover {
 	border: 2px solid darkred;
+	box-shadow: inset 10px 10px rgba(139, 0, 0, 0.663),
+		inset -10px -10px rgba(139, 0, 0, 0.663);
 	border-radius: 5px;
 }
 
