@@ -72,14 +72,14 @@ nav a:hover {
 section {
 	text-align: center;
 	font-size: larger;
-	margin: 0 1em;
+	margin: 0 1em 1em 1em;
 	transition: 1s all;
 }
 
 section:hover {
 	border: 2px solid darkred;
-	box-shadow: inset 10px 10px rgba(139, 0, 0, 0.663),
-		inset -10px -10px rgba(139, 0, 0, 0.663);
+	box-shadow: 2px 2px 30px rgba(139, 0, 0, 0.663),
+		-2px -2px 30px rgba(139, 0, 0, 0.663);
 	border-radius: 5px;
 }
 
@@ -114,7 +114,17 @@ section:hover {
 	margin: 0 1em 1em 0;
 }
 
+.conteudo-secundaria {
+	width: 40%;
+	display: inline-block;
+}
+
+.conteudo-secundaria ol {
+	text-align: left;
+}
+
 ol {
+	text-align: left;
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -158,4 +168,41 @@ footer {
 	font-size: small;
 	font-style: italic;
 	margin: 10px 0 0 0;
+}
+
+@media screen and (max-width: 500px) {
+	body {
+		text-align: center;
+	}
+
+	nav {
+		display: block;
+	}
+
+	.titulo {
+		font-size: x-large;
+	}
+
+	p {
+		font-size: large;
+	}
+
+	.caixa p {
+		text-align: center;
+	}
+
+	.conteudo-secundaria {
+		width: auto;
+		display: block;
+		text-align: center;
+	}
+
+	.conteudo-secundaria ol {
+		text-align: center;
+	}
+
+	.mapa iframe,
+	.video {
+		width: auto;
+	}
 }
