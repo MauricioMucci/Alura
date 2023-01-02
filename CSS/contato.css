@@ -95,6 +95,8 @@ select {
 	padding: 10px 10px;
 	font-style: italic;
 	font-size: medium;
+	width: 50%;
+	height: 150px;
 }
 
 .enviar {
@@ -146,4 +148,22 @@ footer {
 	font-size: small;
 	font-style: italic;
 	margin: 10px 0 0 0;
+}
+
+@media screen and (max-width: 500px) {
+	nav {
+		display: block;
+	}
+
+	.dados-pessoais-div {
+		display: block;
+	}
+
+	.dados-pessoais-input {
+		width: auto;
+	}
+
+	#obs {
+		width: 100%;
+	}
 }
