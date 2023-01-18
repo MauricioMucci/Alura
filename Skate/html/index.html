@@ -29,6 +29,38 @@
 			<button
 				class="cabecalho__botao cabecalho__botao--notificacao"
 			></button>
+			<nav class="menu-lateral">
+				<img
+					src="../img/logo.svg"
+					alt="Logotipo da HZC"
+					class="menu-lateral__logo"
+				/>
+				<a
+					href="#"
+					class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo"
+					>Início</a
+				><a
+					href="#"
+					class="menu-lateral__link menu-lateral__link--videos"
+					>Vídeos</a
+				><a
+					href="#"
+					class="menu-lateral__link menu-lateral__link--picos"
+					>Picos</a
+				><a
+					href="#"
+					class="menu-lateral__link menu-lateral__link--integrantes"
+					>Integrantes</a
+				><a
+					href="#"
+					class="menu-lateral__link menu-lateral__link--camisas"
+					>Camisas</a
+				><a
+					href="#"
+					class="menu-lateral__link menu-lateral__link--pinturas"
+					>Pinturas</a
+				>
+			</nav>
 		</header>
 		<main class="principal">
 			<section class="secao">
@@ -41,21 +73,23 @@
 					/>
 					<div class="cartao__destaque">
 						<p class="cartao__destaque--texto">Vídeo em destaque</p>
-						<h3 class="cartao__destaque--sub-titulo">
+						<h3 class="cartao__destaque--sub-titulo sub-titulo">
 							HZC - Life is... / 2021
 						</h3>
-						<p class="cartao__paragrafo cartao__paragrafo--perfil">
+						<p class="paragrafo cartao__destaque--paragrafo-perfil">
 							Maurício Mucci
 						</p>
-						<p class="cartao__paragrafo cartao__paragrafo--tempo">
+						<p class="paragrafo cartao__destaque--paragrafo-tempo">
 							33 minutos
 						</p>
-						<p
-							class="cartao__paragrafo cartao__paragrafo--estatistica"
-						>
+						<p class="paragrafo cartao__destaque--paragrafo-numero">
 							53 visualizações
 						</p>
-						<button class="cartao__botao">Assistir agora</button>
+						<button
+							class="cartao__destaque--botao cartao__botao--play"
+						>
+							Assistir agora
+						</button>
 					</div>
 				</article>
 			</section>
@@ -68,10 +102,20 @@
 						class="cartao__imagem"
 					/>
 					<div class="cartao__sem-destaque">
-						<p class="cartao__paragrafo--perfil">Maurício Mucci</p>
-						<h2 class="sub-titulo">HZC - Tudo sem Padrin</h2>
-						<p class="cartao__paragrafo--tempo">33 minutos</p>
-						<button class="cartao__botao"></button>
+						<p
+							class="paragrafo cartao__sem-destaque-paragrafo--perfil"
+						>
+							Maurício Mucci
+						</p>
+						<h2 class="cartao__sem-destaque--sub-titulo sub-titulo">
+							HZC - Tudo sem Padrin
+						</h2>
+						<p class="paragrafo cartao__sem-destaque--tempo">
+							33 minutos
+						</p>
+						<button
+							class="cartao__sem-destaque--botao cartao__botao--play"
+						></button>
 					</div>
 				</article>
 				<article class="cartao">
@@ -81,10 +125,20 @@
 						class="cartao__imagem"
 					/>
 					<div class="cartao__sem-destaque">
-						<p class="cartao__paragrafo--perfil">Maurício Mucci</p>
-						<h2 class="sub-titulo">HZC - Enter The Hu-flez</h2>
-						<p class="cartao__paragrafo--tempo">33 minutos</p>
-						<button class="cartao__botao"></button>
+						<p
+							class="paragrafo cartao__sem-destaque-paragrafo--perfil"
+						>
+							Maurício Mucci
+						</p>
+						<h2 class="cartao__sem-destaque--sub-titulo sub-titulo">
+							HZC - Enter The Hu-flez
+						</h2>
+						<p class="paragrafo cartao__sem-destaque--tempo">
+							33 minutos
+						</p>
+						<button
+							class="cartao__sem-destaque--botao cartao__botao--play"
+						></button>
 					</div>
 				</article>
 				<article class="cartao">
@@ -94,10 +148,20 @@
 						class="cartao__imagem"
 					/>
 					<div class="cartao__sem-destaque">
-						<p class="cartao__paragrafo--perfil">Maurício Mucci</p>
-						<h2 class="sub-titulo">HZC - Vol.3</h2>
-						<p class="cartao__paragrafo--tempo">33 minutos</p>
-						<button class="cartao__botao"></button>
+						<p
+							class="paragrafo cartao__sem-destaque-paragrafo--perfil"
+						>
+							Maurício Mucci
+						</p>
+						<h2 class="cartao__sem-destaque--sub-titulo sub-titulo">
+							HZC - Vol.3
+						</h2>
+						<p class="paragrafo cartao__sem-destaque--tempo">
+							33 minutos
+						</p>
+						<button
+							class="cartao__sem-destaque--botao cartao__botao--play"
+						></button>
 					</div>
 				</article>
 				<article class="cartao">
@@ -107,18 +171,151 @@
 						class="cartao__imagem"
 					/>
 					<div class="cartao__sem-destaque">
-						<p class="cartao__paragrafo--perfil">Maurício Mucci</p>
-						<h2 class="sub-titulo">HZC - Love Machine</h2>
-						<p class="cartao__paragrafo--tempo">33 minutos</p>
-						<button class="cartao__botao"></button>
+						<p
+							class="paragrafo cartao__sem-destaque-paragrafo--perfil"
+						>
+							Maurício Mucci
+						</p>
+						<h2 class="cartao__sem-destaque--sub-titulo sub-titulo">
+							HZC - Love Machine
+						</h2>
+						<p class="paragrafo cartao__sem-destaque--tempo">
+							33 minutos
+						</p>
+						<button
+							class="cartao__sem-destaque--botao cartao__botao--play"
+						></button>
 					</div>
 				</article>
 			</section>
-			<section class="secao"></section>
+			<section class="secao">
+				<article class="cartao">
+					<img
+						src="../img/banner-mobile_2.png"
+						alt="Banner 2 Mobile"
+						class="cartao__imagem"
+					/>
+					<div class="cartao__destaque">
+						<p class="cartao__destaque--texto">Nova arte</p>
+						<h3 class="cartao__destaque--sub-titulo sub-titulo">
+							Only Zikas - Lagoa Dompa Club
+						</h3>
+						<p class="paragrafo cartao__destaque--paragrafo-perfil">
+							Maurício Mucci
+						</p>
+						<p class="paragrafo cartao__destaque--paragrafo-preco">
+							33,33
+						</p>
+						<p class="paragrafo cartao__destaque--paragrafo-numero">
+							53 visualizações
+						</p>
+						<button
+							class="cartao__destaque--botao cartao__botao--buy"
+						>
+							Comprar agora
+						</button>
+					</div>
+				</article>
+			</section>
 			<section class="secao">
 				<h2 class="sub-titulo">Produtos recentes</h2>
+				<article class="cartao">
+					<img
+						src="../img/produto_1.png"
+						alt="Camisa 1"
+						class="cartao__imagem"
+					/>
+					<div class="cartao__sem-destaque">
+						<p
+							class="paragrafo cartao__sem-destaque-paragrafo--perfil"
+						>
+							Maurício Mucci
+						</p>
+						<h2 class="cartao__sem-destaque--sub-titulo sub-titulo">
+							IBM
+						</h2>
+						<p class="paragrafo cartao__sem-destaque--preco">
+							33,33
+						</p>
+						<button
+							class="cartao__sem-destaque--botao cartao__botao--buy"
+						></button>
+					</div>
+				</article>
+				<article class="cartao">
+					<img
+						src="../img/produto_2.png"
+						alt="Camisa 2"
+						class="cartao__imagem"
+					/>
+					<div class="cartao__sem-destaque">
+						<p
+							class="paragrafo cartao__sem-destaque-paragrafo--perfil"
+						>
+							Maurício Mucci
+						</p>
+						<h2 class="cartao__sem-destaque--sub-titulo sub-titulo">
+							Huflez Crew Philosophy Club
+						</h2>
+						<p class="paragrafo cartao__sem-destaque--preco">
+							33,33
+						</p>
+						<button
+							class="cartao__sem-destaque--botao cartao__botao--buy"
+						></button>
+					</div>
+				</article>
+				<article class="cartao">
+					<img
+						src="../img/produto_3.png"
+						alt="Camisa 3"
+						class="cartao__imagem"
+					/>
+					<div class="cartao__sem-destaque">
+						<p
+							class="paragrafo cartao__sem-destaque-paragrafo--perfil"
+						>
+							Maurício Mucci
+						</p>
+						<h2 class="cartao__sem-destaque--sub-titulo sub-titulo">
+							Corujita noturna
+						</h2>
+						<p class="paragrafo cartao__sem-destaque--preco">
+							33,33
+						</p>
+						<button
+							class="cartao__sem-destaque--botao cartao__botao--buy"
+						></button>
+					</div>
+				</article>
+				<article class="cartao">
+					<img
+						src="../img/produto_4.png"
+						alt="Camisa 4"
+						class="cartao__imagem"
+					/>
+					<div class="cartao__sem-destaque">
+						<p
+							class="paragrafo cartao__sem-destaque-paragrafo--perfil"
+						>
+							Maurício Mucci
+						</p>
+						<h2 class="cartao__sem-destaque--sub-titulo sub-titulo">
+							GGG - Gatin G Gorro
+						</h2>
+						<p class="paragrafo cartao__sem-destaque--preco">
+							33,33
+						</p>
+						<button
+							class="cartao__sem-destaque--botao cartao__botao--buy"
+						></button>
+					</div>
+				</article>
 			</section>
 		</main>
-		<footer class="rodape"></footer>
+		<footer class="rodape">
+			<p class="copyright">&copy; Copyright HZC - 2023</p>
+		</footer>
 	</body>
+	<script src="../js/index.js"></script>
 </html>
