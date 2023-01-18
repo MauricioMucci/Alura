@@ -1,0 +1,140 @@
+@font-face {
+	font-family: "icones";
+	src: url(../font/icones.ttf);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: #ffffff;
+	background-color: #1d232a;
+	font-family: "Open Sans", "icones", sans-serif;
+}
+
+.cabecalho {
+	display: flex;
+	justify-content: space-between;
+	background-color: #15191c;
+	padding: 8px 16px;
+}
+
+.cabecalho__botao {
+	padding: 8px;
+	font-size: 1.5em;
+}
+
+.cabecalho__botao--menu::before {
+	content: "\e904";
+}
+
+.cabecalho__botao--notificacao::before {
+	content: "\e906";
+}
+
+.cabecalho__imagem {
+	width: 40px;
+}
+
+.principal {
+	display: flex;
+	flex-direction: column;
+}
+
+.secao {
+	margin: 8px;
+	padding: 8px 16px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	row-gap: 16px;
+}
+
+.titulo {
+	font-size: 1.8em;
+	font-weight: 700;
+	line-height: 2em;
+}
+
+.sub-titulo {
+	font-size: 1.4em;
+	font-weight: 700;
+	line-height: 2em;
+}
+
+.cartao {
+	background-color: #2c343a;
+	border-radius: 24px;
+}
+
+.cartao__imagem {
+	width: 100%;
+	overflow: hidden;
+}
+
+.cartao__destaque {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"texto texto"
+		"sub-titulo sub-titulo"
+		"perfil perfil"
+		"tempo numero"
+		"botao botao";
+	gap: 16px;
+	justify-items: flex-start;
+	padding: 16px;
+}
+
+.texto {
+	grid-area: texto;
+}
+
+.cartao .sub-titulo {
+	grid-area: sub-titulo;
+}
+
+.cartao__paragrafo {
+	color: #95999c;
+}
+
+.cartao__paragrafo--perfil {
+	grid-area: perfil;
+}
+
+.cartao__paragrafo--tempo {
+	grid-area: tempo;
+}
+
+.cartao__paragrafo--tempo::before {
+	content: "\e90c";
+}
+
+.cartao__paragrafo--numero {
+	grid-area: numero;
+}
+
+.cartao__paragrafo--numero::before {
+	content: "\e90f";
+}
+
+.cartao__botao {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #0480dc;
+	border: 1px solid black;
+	border-radius: 8px;
+	padding: 8px;
+	width: 100%;
+	grid-area: botao;
+	justify-self: center;
+}
+
+.cartao__botao::before {
+	content: "\e90b";
+	margin-right: 8px;
+	font-size: 1.2em;
+}
