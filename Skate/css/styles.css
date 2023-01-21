@@ -13,7 +13,7 @@ body {
 	font-family: "Open Sans", "icones", sans-serif;
 }
 
-.cabecalho {
+.cabecalho--mobile {
 	display: flex;
 	justify-content: space-between;
 	background-color: #15191c;
@@ -21,6 +21,12 @@ body {
 	position: fixed;
 	top: 0;
 	width: 100vw;
+	height: 64px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+
+.cabecalho--desktop {
+	display: none;
 }
 
 .cabecalho__botao {
@@ -66,7 +72,7 @@ body {
 }
 
 .sub-titulo {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	font-weight: 700;
 	line-height: 2em;
 }
@@ -224,7 +230,7 @@ body {
 	height: 100vh;
 	position: absolute;
 	left: -100vw;
-	top: 64px;
+	top: 65px;
 	transition: 1s;
 	overflow: auto;
 }
@@ -232,7 +238,7 @@ body {
 .menu-lateral--ativo {
 	position: fixed;
 	left: 0;
-	top: 64px;
+	top: 65px;
 	transition: 1s;
 }
 
@@ -282,5 +288,120 @@ body {
 	content: "\e90a";
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
+	body {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		grid-template-rows: auto;
+	}
+
+	.cabecalho--mobile {
+		display: none;
+	}
+
+	.cabecalho--desktop {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		padding: 16px 60px;
+		height: 80px;
+		column-gap: 32px;
+		background-color: #1d232a;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+	}
+
+	.cabecalho__paragrafo {
+		display: grid;
+		grid-template-columns: repeat(3, auto);
+		column-gap: 8px;
+		align-items: center;
+		justify-self: flex-end;
+		color: #95999c;
+		padding: 8px 32px;
+		border-right: 1px solid #95999c;
+	}
+
+	.cabecalho__paragrafo::before {
+		content: "";
+		display: block;
+		width: 32px;
+		height: 32px;
+		background-image: url(../img/profile_2.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.cabecalho__paragrafo::after {
+		content: "\e90d";
+		color: #ffffff;
+		font-size: 1.5rem;
+	}
+
+	.menu-lateral {
+		grid-column: 1;
+		grid-row: 1 / span 3;
+		transition: none;
+		position: static;
+		width: 15vw;
+	}
+
+	.principal {
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"inicio  inicio inicio"
+			"mais-vistos mais-vistos mais-vistos"
+			"destaque destaque destaque"
+			"produtos produtos produtos";
+		column-gap: 32px;
+		padding: 16px 60px;
+		grid-column: 2;
+	}
+
+	.rodape {
+		grid-column: span 2;
+	}
+
+	.titulo {
+		margin-top: 0;
+	}
+
+	.secao-inicio {
+		grid-area: inicio;
+	}
+
+	.secao-mais-vistos {
+		grid-area: mais-vistos;
+	}
+
+	.secao-destaque {
+		grid-area: destaque;
+	}
+
+	.secao-produtos {
+		grid-area: produtos;
+	}
+
+	.cartao__destaque--botao {
+		width: auto;
+		justify-self: flex-start;
+	}
+
+	.secao-mais-vistos,
+	.secao-produtos {
+		grid-template-rows: repeat(2, auto);
+		grid-template-columns: repeat(4, auto);
+		gap: 8px;
+	}
+
+	.sub-titulo--especial {
+		grid-row: 1;
+		grid-column: span 4;
+	}
+
+	.cartao {
+		grid-row: 2;
+		grid-column: auto;
+	}
 }

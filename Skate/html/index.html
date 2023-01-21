@@ -19,7 +19,7 @@
 		<link rel="stylesheet" href="../css/styles.css" />
 	</head>
 	<body>
-		<header class="cabecalho">
+		<header class="cabecalho--mobile">
 			<button class="cabecalho__botao cabecalho__botao--menu"></button>
 			<img
 				src="../img/logo.svg"
@@ -29,48 +29,54 @@
 			<button
 				class="cabecalho__botao cabecalho__botao--notificacao"
 			></button>
-			<nav class="menu-lateral">
-				<img
-					src="../img/logo.svg"
-					alt="Logotipo da HZC"
-					class="menu-lateral__logo"
-				/>
-				<a
-					href="#"
-					class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo"
-					>Início</a
-				><a
-					href="#"
-					class="menu-lateral__link menu-lateral__link--videos"
-					>Vídeos</a
-				><a
-					href="#"
-					class="menu-lateral__link menu-lateral__link--picos"
-					>Picos</a
-				><a
-					href="#"
-					class="menu-lateral__link menu-lateral__link--integrantes"
-					>Integrantes</a
-				><a
-					href="#"
-					class="menu-lateral__link menu-lateral__link--camisas"
-					>Camisas</a
-				><a
-					href="#"
-					class="menu-lateral__link menu-lateral__link--pinturas"
-					>Pinturas</a
-				>
-			</nav>
 		</header>
+		<header class="cabecalho--desktop">
+			<p class="cabecalho__paragrafo cabecalho__paragrafo--perfil">
+				Maurício Mucci
+			</p>
+			<button
+				class="cabecalho__botao cabecalho__botao--notificacao"
+			></button>
+		</header>
+		<nav class="menu-lateral">
+			<img
+				src="../img/logo.svg"
+				alt="Logotipo da HZC"
+				class="menu-lateral__logo"
+			/>
+			<a
+				href="#"
+				class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo"
+				>Início</a
+			><a href="#" class="menu-lateral__link menu-lateral__link--videos"
+				>Vídeos</a
+			><a href="#" class="menu-lateral__link menu-lateral__link--picos"
+				>Picos</a
+			><a
+				href="#"
+				class="menu-lateral__link menu-lateral__link--integrantes"
+				>Integrantes</a
+			><a href="#" class="menu-lateral__link menu-lateral__link--camisas"
+				>Camisas</a
+			><a href="#" class="menu-lateral__link menu-lateral__link--pinturas"
+				>Pinturas</a
+			>
+		</nav>
 		<main class="principal">
-			<section class="secao">
+			<section class="secao secao-inicio">
 				<h1 class="titulo">Início</h1>
 				<article class="cartao">
-					<img
-						src="../img/banner-mobile_1.png"
-						alt="Banner Incial Mobile"
-						class="cartao__imagem"
-					/>
+					<picture>
+						<source
+							srcset="../img/banner_1.png"
+							media="(min-width: 1024px)"
+						/>
+						<img
+							src="../img/banner-mobile_1.png"
+							alt="Banner Incial Mobile"
+							class="cartao__imagem"
+						/>
+					</picture>
 					<div class="cartao__destaque">
 						<p class="cartao__destaque--texto">Vídeo em destaque</p>
 						<h3 class="cartao__destaque--sub-titulo sub-titulo">
@@ -93,8 +99,10 @@
 					</div>
 				</article>
 			</section>
-			<section class="secao">
-				<h2 class="sub-titulo">Vídeos mais vistos</h2>
+			<section class="secao secao-mais-vistos">
+				<h2 class="sub-titulo sub-titulo--especial">
+					Vídeos mais vistos
+				</h2>
 				<article class="cartao">
 					<img
 						src="../img/video_1.png"
@@ -188,13 +196,19 @@
 					</div>
 				</article>
 			</section>
-			<section class="secao">
+			<section class="secao secao-destaque">
 				<article class="cartao">
-					<img
-						src="../img/banner-mobile_2.png"
-						alt="Banner 2 Mobile"
-						class="cartao__imagem"
-					/>
+					<picture>
+						<source
+							srcset="../img/banner_2.png"
+							media="(min-width: 1024px)"
+						/>
+						<img
+							src="../img/banner-mobile_2.png"
+							alt="Banner 2 Mobile"
+							class="cartao__imagem"
+						/>
+					</picture>
 					<div class="cartao__destaque">
 						<p class="cartao__destaque--texto">Nova arte</p>
 						<h3 class="cartao__destaque--sub-titulo sub-titulo">
@@ -217,8 +231,10 @@
 					</div>
 				</article>
 			</section>
-			<section class="secao">
-				<h2 class="sub-titulo">Produtos recentes</h2>
+			<section class="secao secao-produtos">
+				<h2 class="sub-titulo sub-titulo--especial">
+					Produtos recentes
+				</h2>
 				<article class="cartao">
 					<img
 						src="../img/produto_1.png"
